@@ -1,0 +1,835 @@
+/* Шрифты */
+@font-face {
+  font-family: 'ProximaNova_Rg';
+  src: url('../fonts/ProximaNova-Regular.eot');
+  src: url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/ProximaNova-Regular.woff2') format('woff2'), url('../fonts/ProximaNova-Regular.woff') format('woff'), url('../fonts/ProximaNova-Regular.ttf') format('truetype'), url('../fonts/ProximaNova-Regular.svg#ProximaNova-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ProximaNova_Bl';
+  src: url('../fonts/ProximaNova-Bold.eot');
+  src: url('../fonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/ProximaNova-Bold.woff2') format('woff2'), url('../fonts/ProximaNova-Bold.woff') format('woff'), url('../fonts/ProximaNova-Bold.ttf') format('truetype'), url('../fonts/ProximaNova-Bold.svg#ProximaNova-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+/* цвета */
+/* basic setting*/
+/* line 42, style.less */
+html {
+  font-size: 10px;
+}
+/* line 47, style.less */
+body {
+  font-family: 'ProximaNova_Rg', sans-serif;
+}
+/* line 51, style.less */
+.s_btn {
+  width: 70%;
+  padding: 0.8rem;
+  background-color: #d5383e;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  font-family: 'ProximaNova_Bl', sans-serif;
+}
+/* line 59, style.less */
+.s_btn:hover {
+  cursor: pointer;
+  background-color: #bc282d;
+}
+/* line 63, style.less */
+.s_btn:focus {
+  outline: none;
+}
+/* line 69, style.less */
+.form h2 {
+  font-size: 2rem;
+  font-family: 'ProximaNova_Bl', sans-serif;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+/* line 75, style.less */
+.form-input,
+.form-textarea {
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 5px;
+  border: solid 1px;
+  width: 70%;
+  font-size: 1.3rem;
+}
+/* line 84, style.less */
+.form-btn {
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+/* line 90, style.less */
+section {
+  padding: 6rem 0;
+}
+/* line 94, style.less */
+.red-line {
+  text-align: center;
+  width: 30%;
+  margin: 2.5rem;
+  border-top: solid #d5383e 4px;
+}
+/* line 102, style.less */
+.logo {
+  padding: 1rem;
+  padding-bottom: 0.5rem;
+}
+/* line 105, style.less */
+.logo-img {
+  margin-top: -5rem;
+}
+/* line 108, style.less */
+.logo-text {
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  line-height: 1.3;
+}
+/* line 113, style.less */
+.logo-text span {
+  text-transform: uppercase;
+  color: #d5383e;
+  font-size: 2.4rem;
+}
+/* line 118, style.less */
+.logo-text p {
+  font-size: 2.4rem;
+  font-family: 'ProximaNova_Bl', sans-serif;
+}
+/* nav-bar */
+/* line 127, style.less */
+.nav {
+  background: #292929 url(../img/main-bg.png) right top no-repeat;
+}
+/* line 129, style.less */
+.nav-link {
+  text-align: center;
+  margin-top: 2.5rem;
+  font-size: 1.7rem;
+  color: #fff;
+}
+/* line 134, style.less */
+.nav-link:focus {
+  color: #d5383e;
+  text-decoration: underline;
+}
+/* line 138, style.less */
+.nav-link:hover {
+  color: #de6267;
+}
+/* line 142, style.less */
+.nav-target {
+  margin-top: -0.5rem;
+  text-align: right;
+}
+/* line 145, style.less */
+.nav-target span {
+  font-size: 2.8rem;
+  font-family: 'ProximaNova_Bl', sans-serif;
+  color: #fff;
+}
+/* line 151, style.less */
+.nav-mobile {
+  display: none;
+}
+/* main-page */
+@-webkit-keyframes scrolldown {
+  /* line 159, style.less */
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  /* line 162, style.less */
+  50% {
+    -webkit-transform: translateY(110%);
+            transform: translateY(110%);
+  }
+  /* line 165, style.less */
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@keyframes scrolldown {
+  /* line 159, style.less */
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  /* line 162, style.less */
+  50% {
+    -webkit-transform: translateY(110%);
+            transform: translateY(110%);
+  }
+  /* line 165, style.less */
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+/* line 170, style.less */
+.main {
+  margin-top: 1px;
+  padding: 10rem 0;
+  background: #292929 url(../img/main-bg.png) center center no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+/* line 177, style.less */
+.main-info h1 {
+  font-size: 5rem;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  font-family: 'ProximaNova_Bl', sans-serif;
+}
+/* line 182, style.less */
+.main-info h1 span {
+  font-size: 4.2rem;
+}
+/* line 186, style.less */
+.main-info-text {
+  text-align: left;
+  font-size: 2.4rem;
+  font-family: 'ProximaNova_Bl', sans-serif;
+}
+/* line 193, style.less */
+.main-block .media {
+  position: relative;
+  padding-left: 0;
+  margin-top: 2rem;
+}
+/* line 198, style.less */
+.main-block-number {
+  background-image: url(../img/romb.png);
+  background-size: cover;
+  text-align: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  font-size: 1.5rem;
+  line-height: 3.5rem;
+  font-family: 'ProximaNova_Bl', sans-serif;
+}
+/* line 208, style.less */
+.main-block-text {
+  margin-top: 1rem;
+  font-size: 1.6rem;
+  line-height: 1.3;
+}
+/* line 214, style.less */
+.main-form {
+  margin-top: 2rem;
+  background-color: rgba(213, 56, 62, 0.5);
+  padding: 4rem;
+}
+/* line 218, style.less */
+.main-form .form-input,
+.main-form .form-textarea,
+.main-form .form-btn {
+  margin-left: 6rem;
+}
+/* line 226, style.less */
+.scroll-down {
+  position: absolute;
+  left: 50%;
+  -webkit-animation: scrolldown 3s ease-in-out 3s infinite;
+          animation: scrolldown 3s ease-in-out 3s infinite;
+}
+/* service */
+/* line 235, style.less */
+.service h2 {
+  font-size: 3.2rem;
+  font-family: 'ProximaNova_Bl', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* line 241, style.less */
+.service .red-line {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-65%);
+          transform: translateX(-65%);
+  width: 15%;
+}
+/* line 249, style.less */
+.service p {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 4rem;
+  font-family: 'ProximaNova_Bl', sans-serif;
+}
+/* line 255, style.less */
+.service-item {
+  border: solid 2px #d5383e;
+  padding: 2rem;
+  margin-bottom: 4rem;
+  min-height: 37rem;
+}
+/* line 260, style.less */
+.service-item h4 {
+  position: relative;
+  display: inline-block;
+  padding: 0.7rem;
+  left: -2rem;
+  margin-bottom: 2rem;
+  background-color: #d5383e;
+  color: #fff;
+  text-align: left;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-family: 'ProximaNova_Bl', sans-serif;
+}
+/* line 273, style.less */
+.service-item-img {
+  text-align: center;
+  margin-bottom: 2rem;
+  height: 23rem;
+}
+/* line 277, style.less */
+.service-item-img img {
+  max-width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/* line 283, style.less */
+.service-btn {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+/* line 288, style.less */
+.service .img-apple {
+  padding: 2.5rem 0;
+}
+/* target */
+/* line 295, style.less */
+.target {
+  padding: 5rem 0;
+  background: #292929 url(../img/target-bg.png) center center no-repeat;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+}
+/* line 301, style.less */
+.target h2 {
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-family: 'ProximaNova_Bl', sans-serif;
+}
+/* line 307, style.less */
+.target p {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+}
+/* line 311, style.less */
+.target .red-line {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-65%);
+          transform: translateX(-65%);
+  width: 15%;
+}
+/* line 320, style.less */
+.target-form .form-input,
+.target-form .form-textarea {
+  width: 95%;
+}
+/* line 325, style.less */
+.target-btn {
+  margin-top: 1rem;
+  width: 95%;
+  border-radius: 5px;
+}
+/* features */
+/* line 335, style.less */
+.features h2 {
+  text-align: center;
+  font-size: 3rem;
+  font-family: 'ProximaNova_Bl', sans-serif;
+}
+/* line 340, style.less */
+.features .red-line {
+  width: 10%;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-75%);
+          transform: translateX(-75%);
+}
+/* line 346, style.less */
+.features-item {
+  text-align: center;
+  margin: 3rem 0;
+}
+/* line 349, style.less */
+.features-item p {
+  display: inline-block;
+  margin-top: 2rem;
+  width: 90%;
+  font-size: 1.8rem;
+  font-family: 'ProximaNova_Bl', sans-serif;
+}
+/* line 356, style.less */
+.features-item-img {
+  display: inline-block;
+  width: 16rem;
+  height: 16rem;
+  background: url(../img/features/fon-img.png) center center no-repeat;
+}
+/* line 361, style.less */
+.features-item-img img {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+/* question*/
+/* line 372, style.less */
+.question {
+  position: relative;
+  background: #292929 url(../img/question-bg.png) center center no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+/* line 377, style.less */
+.question h2 {
+  font-size: 3rem;
+  text-align: center;
+  font-family: 'ProximaNova_Bl', sans-serif;
+}
+/* line 382, style.less */
+.question-form {
+  width: 100%;
+  background-color: rgba(213, 56, 62, 0.5);
+  padding: 2rem 4rem;
+  text-align: center;
+}
+/* line 387, style.less */
+.question-form h2 {
+  font-family: 'ProximaNova_Rg', sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+  display: inline-block;
+  width: 70%;
+}
+/* line 395, style.less */
+.question-form .form-input,
+.question-form .form-textarea,
+.question-form .form-btn {
+  width: 60%;
+}
+/* line 402, style.less */
+.question .woman {
+  position: absolute;
+  bottom: 0;
+}
+/* line 406, style.less */
+.question .red-line {
+  width: 10%;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-75%);
+          transform: translateX(-75%);
+}
+/* steps */
+/* line 417, style.less */
+.steps h2 {
+  font-size: 3.5rem;
+  font-family: 'ProximaNova_Bl', sans-serif;
+  text-align: center;
+}
+/* line 422, style.less */
+.steps .red-line {
+  width: 10%;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-75%);
+          transform: translateX(-75%);
+}
+/* line 429, style.less */
+.steps-block .media {
+  margin-bottom: 3rem;
+}
+/* line 433, style.less */
+.steps-block-number {
+  display: inline-block;
+  width: 8rem;
+  height: 8rem;
+  background: url("../img/features/fon-img.png") center center no-repeat;
+  background-size: cover;
+  color: #fff;
+  font-size: 4rem;
+  font-family: 'ProximaNova_Bl', sans-serif;
+  text-align: center;
+  line-height: 8rem;
+}
+/* line 445, style.less */
+.steps-block-text {
+  font-size: 1.4rem;
+  text-align: center;
+  font-family: 'ProximaNova_Bl', sans-serif;
+}
+/* line 449, style.less */
+.steps-block-text_1 {
+  margin-top: 2.3rem;
+}
+/* line 452, style.less */
+.steps-block-text_2 {
+  margin-top: 3.5rem;
+}
+/* line 455, style.less */
+.steps-block-text_3 {
+  margin-top: 0.7rem;
+}
+/* line 458, style.less */
+.steps-block-text_4 {
+  margin-top: 2rem;
+}
+/* line 463, style.less */
+.steps-icon {
+  margin-left: 2rem;
+}
+/* faq */
+/* line 470, style.less */
+.faq {
+  background: #292929 url(../img/faq-bg.png) center center no-repeat;
+  background-size: cover;
+}
+/* line 473, style.less */
+.faq h2 {
+  color: #fff;
+  font-size: 3rem;
+  font-family: 'ProximaNova_Bl', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* line 480, style.less */
+.faq .red-line {
+  width: 20%;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-75%);
+          transform: translateX(-75%);
+}
+/* line 487, style.less */
+.faq .accordion-item {
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+/* line 490, style.less */
+.faq .accordion-item-active {
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  left: -1.5rem;
+  top: 0.7rem;
+  background: url(../img/active.png) center center no-repeat;
+  background-size: cover;
+  display: none;
+}
+/* line 501, style.less */
+.faq .accordion-header {
+  background-color: #722326;
+  padding: 1rem 2rem;
+}
+/* line 504, style.less */
+.faq .accordion-header h4 {
+  color: #fff;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  margin: 0;
+}
+/* line 513, style.less */
+.faq .accordion-text {
+  width: 95%;
+  padding: 1rem 2rem;
+  margin-left: 5%;
+  background-color: rgba(255, 255, 255, 0.7);
+  font-size: 1.4rem;
+  display: none;
+}
+/* line 525, style.less */
+.active {
+  display: block;
+}
+/* feedback */
+/* line 532, style.less */
+.feedback h2 {
+  text-align: center;
+  font-size: 3.5rem;
+  font-family: 'ProximaNova_Bl', sans-serif;
+}
+/* line 537, style.less */
+.feedback .red-line {
+  width: 15%;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-55%);
+          transform: translateX(-55%);
+  margin-bottom: 6rem;
+}
+/* line 546, style.less */
+.feedback .slider-item {
+  position: relative;
+  padding: 1rem;
+  padding-right: 3.5rem;
+}
+/* line 550, style.less */
+.feedback .slider-item-img {
+  background: url(../img/kostuchenko.jpg) center center no-repeat;
+  background-size: cover;
+  border-radius: 100%;
+  height: 20rem;
+  width: 20rem;
+  margin: 2rem auto;
+}
+/* line 558, style.less */
+.feedback .slider-item-text {
+  position: relative;
+  -webkit-box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1);
+  padding: 2rem 3rem;
+}
+/* line 562, style.less */
+.feedback .slider-item-text h4 {
+  font-size: 2rem;
+  font-family: 'ProximaNova_Bl', sans-serif;
+  margin-bottom: 2rem;
+}
+/* line 567, style.less */
+.feedback .slider-item-text p {
+  font-size: 1.5rem;
+}
+/* line 570, style.less */
+.feedback .slider-item-text::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 4rem;
+  height: 4rem;
+  left: -2rem;
+  top: 10rem;
+  border-top-right-radius: 50%;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-box-shadow: -11px 11px 17px -1px rgba(0, 0, 0, 0.15);
+          box-shadow: -11px 11px 17px -1px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+}
+/* work */
+/* line 590, style.less */
+.work {
+  position: relative;
+  background: #292929 url(../img/question-bg.png) center center no-repeat;
+  background-size: cover;
+}
+/* line 594, style.less */
+.work-content {
+  color: #fff;
+  background-color: rgba(213, 56, 62, 0.7);
+  padding: 3rem 3rem;
+}
+/* line 600, style.less */
+.work-info h2 {
+  text-align: center;
+  font-family: 'ProximaNova_Bl', sans-serif;
+  font-size: 2rem;
+  margin: 4rem auto;
+  margin-bottom: 6rem;
+  text-transform: uppercase;
+}
+/* line 608, style.less */
+.work-info p {
+  font-size: 1.6rem;
+  font-family: 'ProximaNova_Bl', sans-serif;
+}
+/* line 612, style.less */
+.work-info-item {
+  position: relative;
+  left: 4rem;
+}
+/* line 617, style.less */
+.work-icon {
+  position: absolute;
+  display: block;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: url(../img/work-icon.png) center center no-repeat;
+  left: -2rem;
+}
+/* line 626, style.less */
+.work-form h2 {
+  text-transform: uppercase;
+  font-family: 'ProximaNova_Bl', sans-serif;
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+/* line 633, style.less */
+.work-form p {
+  text-align: center;
+  font-size: 1.6rem;
+}
+/* line 637, style.less */
+.work-form .form-input,
+.work-form .form-textarea,
+.work-form .form-btn {
+  margin: 1rem 4.5rem;
+}
+/* line 643, style.less */
+.work-woman {
+  position: absolute;
+  bottom: 0;
+  left: 43%;
+  width: 27%;
+}
+/* contact */
+/* line 654, style.less */
+.contact-info {
+  padding-top: 7rem;
+  text-align: left;
+}
+/* line 657, style.less */
+.contact-info h2 {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-family: 'ProximaNova_Bl', sans-serif;
+}
+/* line 662, style.less */
+.contact-info .red-line {
+  margin-top: 1rem;
+  width: 40%;
+  position: relative;
+  left: -35%;
+}
+/* line 668, style.less */
+.contact-info p {
+  color: #757575;
+  font-size: 1.5rem;
+}
+/* line 672, style.less */
+.contact-info strong {
+  font-size: 2rem;
+  font-family: 'ProximaNova_Bl', sans-serif;
+}
+/* line 675, style.less */
+.contact-info strong span {
+  font-size: 1.5rem;
+}
+/* line 679, style.less */
+.contact-info .icon {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+  position: relative;
+  top: 0.5rem;
+}
+/* line 686, style.less */
+.contact-info .icon-phone {
+  background: center center no-repeat url(../img/telephone.png);
+}
+/* line 689, style.less */
+.contact-info .icon-email {
+  background: center center no-repeat url(../img/close-envelope.png);
+}
+/* line 692, style.less */
+.contact-info .icon-map {
+  background: center center no-repeat url(../img/maps-and-flags.png);
+}
+/* footer */
+/* line 701, style.less */
+footer {
+  background-color: #292929;
+}
+/* line 704, style.less */
+footer .logo-text p {
+  margin-bottom: 0;
+}
+/* line 708, style.less */
+footer .info_1 {
+  text-align: center;
+  color: #d5383e;
+  font-size: 1.4rem;
+  margin-top: 6rem;
+  margin-bottom: 0;
+}
+/* line 715, style.less */
+footer .legacy {
+  text-align: right;
+  color: #fff;
+  font-size: 1.5rem;
+  margin-bottom: 0;
+  margin-top: 1.5rem;
+}
+/* popup */
+/* line 726, style.less */
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.88);
+}
+/* line 736, style.less */
+.popup h2 {
+  font-size: 2.2rem;
+  font-family: 'ProximaNova_Bl', sans-serif;
+  text-align: center;
+}
+/* line 741, style.less */
+.popup-form {
+  border: 2px solid #d5383e;
+  background-color: #fff;
+  padding: 5rem 3rem;
+}
+/* line 746, style.less */
+.popup-input,
+.popup-textarea,
+.popup-btn {
+  margin-left: 7.5rem;
+}
+/* line 751, style.less */
+.popup-content {
+  position: fixed;
+  top: 15%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+/* line 757, style.less */
+.popup-close {
+  position: absolute;
+  top: -4.5rem;
+  right: 18rem;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 6rem;
+}
+/* line 765, style.less */
+.popup-close:focus {
+  outline: none;
+}
+/* line 768, style.less */
+.popup-close:hover {
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */
