@@ -10,321 +10,7 @@
   <title>Девайс сервис</title>
 
   <style type="text/css">
-    /* Шрифты */
-
-    @font-face {
-      font-family: 'ProximaNova_Rg';
-      src: url('../fonts/ProximaNova-Regular.eot');
-      src: url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/ProximaNova-Regular.woff2') format('woff2'), url('../fonts/ProximaNova-Regular.woff') format('woff'), url('../fonts/ProximaNova-Regular.ttf') format('truetype'), url('../fonts/ProximaNova-Regular.svg#ProximaNova-Regular') format('svg');
-      font-weight: normal;
-      font-style: normal;
-    }
-
-    @font-face {
-      font-family: 'ProximaNova_Bl';
-      src: url('../fonts/ProximaNova-Bold.eot');
-      src: url('../fonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/ProximaNova-Bold.woff2') format('woff2'), url('../fonts/ProximaNova-Bold.woff') format('woff'), url('../fonts/ProximaNova-Bold.ttf') format('truetype'), url('../fonts/ProximaNova-Bold.svg#ProximaNova-Bold') format('svg');
-      font-weight: bold;
-      font-style: normal;
-    }
-
-    /* цвета */
-
-    /* basic setting*/
-
-    /* line 42, style.less */
-
-    html {
-      font-size: 10px;
-    }
-
-    /* line 47, style.less */
-
-    body {
-      font-family: 'ProximaNova_Rg', sans-serif;
-    }
-
-    /* line 51, style.less */
-
-    .s_btn {
-      width: 70%;
-      padding: 0.8rem;
-      background-color: #d5383e;
-      border: none;
-      color: #fff;
-      font-size: 1.5rem;
-      font-family: 'ProximaNova_Bl', sans-serif;
-    }
-
-    /* line 59, style.less */
-
-    .s_btn:hover {
-      cursor: pointer;
-      background-color: #bc282d;
-    }
-
-    /* line 63, style.less */
-
-    .s_btn:focus {
-      outline: none;
-    }
-
-    /* line 69, style.less */
-
-    .form h2 {
-      font-size: 2rem;
-      font-family: 'ProximaNova_Bl', sans-serif;
-      text-align: center;
-      margin-bottom: 3rem;
-    }
-
-    /* line 75, style.less */
-
-    .form-input,
-    .form-textarea {
-      margin: 1rem auto;
-      padding: 1rem;
-      border-radius: 5px;
-      border: solid 1px;
-      width: 70%;
-      font-size: 1.3rem;
-    }
-
-    /* line 84, style.less */
-
-    .form-btn {
-      border-radius: 5px;
-      margin-top: 1rem;
-    }
-
-    /* line 90, style.less */
-
-    section {
-      padding: 6rem 0;
-    }
-
-    /* line 94, style.less */
-
-    .red-line {
-      text-align: center;
-      width: 30%;
-      margin: 2.5rem;
-      border-top: solid #d5383e 4px;
-    }
-
-    /* line 102, style.less */
-
-    .logo {
-      padding: 1rem;
-      padding-bottom: 0.5rem;
-    }
-
-    /* line 105, style.less */
-
-    .logo-img {
-      margin-top: -5rem;
-    }
-
-    /* line 108, style.less */
-
-    .logo-text {
-      display: inline-block;
-      color: #fff;
-      text-align: center;
-      line-height: 1.3;
-    }
-
-    /* line 113, style.less */
-
-    .logo-text span {
-      text-transform: uppercase;
-      color: #d5383e;
-      font-size: 2.4rem;
-    }
-
-    /* line 118, style.less */
-
-    .logo-text p {
-      font-size: 2.4rem;
-      font-family: 'ProximaNova_Bl', sans-serif;
-    }
-
-    /* nav-bar */
-
-    /* line 127, style.less */
-
-    .nav {
-      background: #292929 url(../img/main-bg.png) right top no-repeat;
-    }
-
-    /* line 129, style.less */
-
-    .nav-link {
-      text-align: center;
-      margin-top: 2.5rem;
-      font-size: 1.7rem;
-      color: #fff;
-    }
-
-    /* line 134, style.less */
-
-    .nav-link:focus {
-      color: #d5383e;
-      text-decoration: underline;
-    }
-
-    /* line 138, style.less */
-
-    .nav-link:hover {
-      color: #de6267;
-    }
-
-    /* line 142, style.less */
-
-    .nav-target {
-      margin-top: -0.5rem;
-      text-align: right;
-    }
-
-    /* line 145, style.less */
-
-    .nav-target span {
-      font-size: 2.8rem;
-      font-family: 'ProximaNova_Bl', sans-serif;
-      color: #fff;
-    }
-
-    /* line 151, style.less */
-
-    .nav-mobile {
-      display: none;
-    }
-
-    /* main-page */
-
-    @-webkit-keyframes scrolldown {
-      /* line 159, style.less */
-      0% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-      }
-      /* line 162, style.less */
-      50% {
-        -webkit-transform: translateY(110%);
-        transform: translateY(110%);
-      }
-      /* line 165, style.less */
-      100% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-      }
-    }
-
-    @keyframes scrolldown {
-      /* line 159, style.less */
-      0% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-      }
-      /* line 162, style.less */
-      50% {
-        -webkit-transform: translateY(110%);
-        transform: translateY(110%);
-      }
-      /* line 165, style.less */
-      100% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-      }
-    }
-
-    /* line 170, style.less */
-
-    .main {
-      margin-top: 1px;
-      padding: 10rem 0;
-      background: #292929 url(../img/main-bg.png) center center no-repeat;
-      background-size: cover;
-      color: #fff;
-    }
-
-    /* line 177, style.less */
-
-    .main-info h1 {
-      font-size: 5rem;
-      text-transform: uppercase;
-      margin-bottom: 0;
-      font-family: 'ProximaNova_Bl', sans-serif;
-    }
-
-    /* line 182, style.less */
-
-    .main-info h1 span {
-      font-size: 4.2rem;
-    }
-
-    /* line 186, style.less */
-
-    .main-info-text {
-      text-align: left;
-      font-size: 2.4rem;
-      font-family: 'ProximaNova_Bl', sans-serif;
-    }
-
-    /* line 193, style.less */
-
-    .main-block .media {
-      position: relative;
-      padding-left: 0;
-      margin-top: 2rem;
-    }
-
-    /* line 198, style.less */
-
-    .main-block-number {
-      background-image: url(../img/romb.png);
-      background-size: cover;
-      text-align: center;
-      width: 3.5rem;
-      height: 3.5rem;
-      font-size: 1.5rem;
-      line-height: 3.5rem;
-      font-family: 'ProximaNova_Bl', sans-serif;
-    }
-
-    /* line 208, style.less */
-
-    .main-block-text {
-      margin-top: 1rem;
-      font-size: 1.6rem;
-      line-height: 1.3;
-    }
-
-    /* line 214, style.less */
-
-    .main-form {
-      margin-top: 2rem;
-      background-color: rgba(213, 56, 62, 0.5);
-      padding: 4rem;
-    }
-
-    /* line 218, style.less */
-
-    .main-form .form-input,
-    .main-form .form-textarea,
-    .main-form .form-btn {
-      margin-left: 6rem;
-    }
-
-    /* line 226, style.less */
-
-    .scroll-down {
-      position: absolute;
-      left: 50%;
-      -webkit-animation: scrolldown 3s ease-in-out 3s infinite;
-      animation: scrolldown 3s ease-in-out 3s infinite;
-    }
-
+   @font-face{font-family:ProximaNova_Rg;src:url(fonts/ProximaNova-Regular.eot);src:url(fonts/ProximaNova-Regular.eot?#iefix) format('embedded-opentype'),url(fonts/ProximaNova-Regular.woff2) format('woff2'),url(fonts/ProximaNova-Regular.woff) format('woff'),url(fonts/ProximaNova-Regular.ttf) format('truetype'),url(fonts/ProximaNova-Regular.svg#ProximaNova-Regular) format('svg');font-weight:400;font-style:normal}@font-face{font-family:ProximaNova_Bl;src:url(../fonts/ProximaNova-Bold.eot);src:url(fonts/ProximaNova-Bold.eot?#iefix) format('embedded-opentype'),url(fonts/ProximaNova-Bold.woff2) format('woff2'),url(fonts/ProximaNova-Bold.woff) format('woff'),url(fonts/ProximaNova-Bold.ttf) format('truetype'),url(fonts/ProximaNova-Bold.svg#ProximaNova-Bold) format('svg');font-weight:700;font-style:normal}html{font-size:10px}body{font-family:ProximaNova_Rg,sans-serif}.s_btn{width:70%;padding:.8rem;background-color:#d5383e;border:none;color:#fff;font-size:1.5rem;font-family:ProximaNova_Bl,sans-serif}.s_btn:hover{cursor:pointer;background-color:#bc282d}.s_btn:focus{outline:0}.form h2{font-size:2rem;font-family:ProximaNova_Bl,sans-serif;text-align:center;margin-bottom:3rem}.form-input,.form-textarea{margin:1rem auto;padding:1rem;border-radius:5px;border:solid 1px;width:70%;font-size:1.3rem}.form-btn{border-radius:5px;margin-top:1rem}section{padding:6rem 0}.red-line{text-align:center;width:30%;margin:2.5rem;border-top:solid #d5383e 4px}.logo{padding:1rem;padding-bottom:.5rem}.logo-img{margin-top:-5rem}.logo-text{display:inline-block;color:#fff;text-align:center;line-height:1.3}.logo-text span{text-transform:uppercase;color:#d5383e;font-size:2.4rem}.logo-text p{font-size:2.4rem;font-family:ProximaNova_Bl,sans-serif}.nav{background:#292929 url(img/main-bg.png) right top no-repeat}.nav-link{text-align:center;margin-top:2.5rem;font-size:1.7rem;color:#fff}.nav-link:focus{color:#d5383e;text-decoration:underline}.nav-link:hover{color:#de6267}.nav-target{margin-top:-.5rem;text-align:right}.nav-target span{font-size:2.8rem;font-family:ProximaNova_Bl,sans-serif;color:#fff}.nav-mobile{display:none}@-webkit-keyframes scrolldown{0%{-webkit-transform:translateY(0);transform:translateY(0)}50%{-webkit-transform:translateY(110%);transform:translateY(110%)}100%{-webkit-transform:translateY(0);transform:translateY(0)}}@keyframes scrolldown{0%{-webkit-transform:translateY(0);transform:translateY(0)}50%{-webkit-transform:translateY(110%);transform:translateY(110%)}100%{-webkit-transform:translateY(0);transform:translateY(0)}}.main{margin-top:1px;padding:10rem 0;background:#292929 url(img/main-bg.png) center center no-repeat;background-size:cover;color:#fff}.main-info h1{font-size:5rem;text-transform:uppercase;margin-bottom:0;font-family:ProximaNova_Bl,sans-serif}.main-info h1 span{font-size:4.2rem}.main-info-text{text-align:left;font-size:2.4rem;font-family:ProximaNova_Bl,sans-serif}.main-block .media{position:relative;padding-left:0;margin-top:2rem}.main-block-number{background-image:url(img/romb.png);background-size:cover;text-align:center;width:3.5rem;height:3.5rem;font-size:1.5rem;line-height:3.5rem;font-family:ProximaNova_Bl,sans-serif}.main-block-text{margin-top:1rem;font-size:1.6rem;line-height:1.3}.main-form{margin-top:2rem;background-color:rgba(213,56,62,.5);padding:4rem}.main-form .form-btn,.main-form .form-input,.main-form .form-textarea{margin-left:6rem}.scroll-down{position:absolute;left:50%;-webkit-animation:scrolldown 3s ease-in-out 3s infinite;animation:scrolldown 3s ease-in-out 3s infinite}
   </style>
 </head>
 
@@ -385,7 +71,7 @@
           <div class="red-line"></div>
           <p class="main-info-text">Новейшее оборудование позволяет максимально точно выявить причину<br>поломки для идеального ремонта</p>
           <div class="row main-block ">
-            <div class="media col-5 offset-1 col-md-5  offset-md-1 col-lg-6  offset-lg-0 col-xl-6 item_1_2 ">
+            <div class="media main-block-item  col-5 offset-1 col-md-5  offset-md-1 col-lg-6  offset-lg-0 col-xl-6 item_1_2 ">
               <div class="main-block-number align-self-center mr-3">
                 <span>01</span>
               </div>
@@ -393,7 +79,7 @@
                 <p class="main-block-text">Доступные цены</p>
               </div>
             </div>
-            <div class="media col-6 col-md-5 col-lg-6 col-xl-6 item_1_2">
+            <div class="media main-block-item col-6 col-md-5 col-lg-6 col-xl-6 item_1_2">
               <div class="main-block-number align-self-center mr-3">
                 <span>02</span>
               </div>
@@ -401,7 +87,7 @@
                 <p class="main-block-text">Кратчайшие сроки ремонта</p>
               </div>
             </div>
-            <div class="media col-5 offset-1 col-md-5 offset-md-1 col-lg-6 offset-lg-0 col-xl-6 item_3_4">
+            <div class="media main-block-item col-5 offset-1 col-md-5 offset-md-1 col-lg-6 offset-lg-0 col-xl-6 item_3_4">
               <div class="main-block-number align-self-center mr-3">
                 <span>03</span>
               </div>
@@ -409,7 +95,7 @@
                 <p class="main-block-text">Ремонт сложных неисправностей</p>
               </div>
             </div>
-            <div class="media col-6 col-md-5 col-lg-6 col-xl-6 item_3_4">
+            <div class="media main-block-item col-6 col-md-5 col-lg-6 col-xl-6 item_3_4">
               <div class="main-block-number align-self-center mr-3">
                 <span>04</span>
               </div>
@@ -417,7 +103,7 @@
                 <p class="main-block-text">Гарантия на все виды ремонта</p>
               </div>
             </div>
-            <div class="media col-5 offset-1 col-md-5 offset-md-1 col-lg-6 offset-lg-0 col-xl-6 item_5_6">
+            <div class="media main-block-item col-5 offset-1 col-md-5 offset-md-1 col-lg-6 offset-lg-0 col-xl-6 item_5_6">
               <div class="main-block-number align-self-center mr-3">
                 <span>05</span>
               </div>
@@ -425,7 +111,7 @@
                 <p class="main-block-text">Ремонт техники всех производителей</p>
               </div>
             </div>
-            <div class="media col-6 col-md-5 col-lg-6 col-xl-6 item_5_6">
+            <div class="media main-block-item col-6 col-md-5 col-lg-6 col-xl-6 item_5_6">
               <div class="main-block-number align-self-center mr-3">
                 <span>06</span>
               </div>
@@ -435,7 +121,7 @@
             </div>
           </div>
         </div>
-        <form action="#" class="form main-form col-md-8 offset-md-2 col-lg-5 offset-lg-1 col-xl-5 offset-xl-1">
+        <form action="#" class="form main-form col-12 col-md-8 offset-md-2 col-lg-5 offset-lg-1 col-xl-5 offset-xl-1">
           <h2>Заполните заявку на диагностику Вашего девайса и узнайте <br>стоимость ремонта</h2>
           <input type="text" placeholder="Введите имя" class="form-input">
           <input type="text" placeholder="Введите номер телефона" class="form-input">
@@ -573,7 +259,7 @@
       <h2>Узнайте какая стоимость и срок ремонта Вашего девайса</h2>
       <div class="red-line"></div>
       <div class="row">
-        <form action="#" class="form question-form col-lg-8 offset-lg-2 col-xl-8 offset-xl-2">
+        <form action="#" class="form question-form col-12 col-lg-8 offset-lg-2 col-xl-8 offset-xl-2">
           <h2>Для того, чтобы узнать стоимость, Заполните форму</h2>
           <input type="text" placeholder="Введите имя" class="form-input">
           <input type="text" placeholder="Введите номер телефона" class="form-input">
@@ -777,7 +463,7 @@
     <div class="container">
       <div class="row">
         <div class="map col-12 col-lg-8 col-xl-8">
-          <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab0b01711140856ecc63c9ff8eba7a063850fb437bab703a00413eea3cba00c91&amp;width=100%25&amp;height=460&amp;lang=ru_RU&amp;scroll=true"></script>
+          <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab0b01711140856ecc63c9ff8eba7a063850fb437bab703a00413eea3cba00c91&amp;width=100%25&amp;height=460&amp;lang=ru_RU&amp;scroll=false"></script>
         </div>
         <div class="contact-info  col-lg-4 col-xl-4">
           <h2>Контакты</h2>

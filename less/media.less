@@ -53,6 +53,7 @@
     display: none;
   }
   .nav-mobile {
+    display: block;
     position: relative;
     background: @fon_color;
     &-btn {
@@ -232,6 +233,139 @@
   footer {
     .logo {
       text-align: center;
+    }
+  }
+}
+
+@media (max-width:320px){
+  .main{
+    h1{
+      font-size: 3rem;
+      span{
+        font-size: 2.9rem;
+      }
+    }
+    p{
+      font-size: 2rem;
+    }
+    .red-line {
+	transform: translateX(93%);
+}
+    &-block
+    {
+      .col-5,.col-6{
+        max-width: 100%;
+      }
+      .offset-1{
+        margin-left: 10%;
+      }
+      &-item{
+        margin-left:10%;
+      }
+    }
+    &-form{
+      .form-input,
+    .form-textarea,
+    .form-btn {
+     width: 100%;
+      margin-left: 0;
+    }
+    }
+  }
+  .service {
+    .red-line{
+      left:43%;
+    }
+}
+  .target{
+    h2{
+      font-size: 2.7rem;
+    }
+    .red-line {
+	left:43%;
+}
+  }
+  .features{
+    h2{
+      font-size: 2.5rem;
+    }
+    .red-line {
+	display: none;
+}
+  }
+  .question {
+    h2{
+      font-size: 2.3rem;
+    }
+    form{
+      h2{
+        font-size: 2rem;
+      }
+    }
+    .red-line {
+	display: none;
+}
+
+	.form-input,
+    .form-textarea,
+    .form-btn {
+     width: 100%;
+      margin-left: 0;
+    }
+}
+  .steps{
+    
+    .red-line {
+	display: none;
+}
+    .col-8{
+      max-width: 90%;
+    }
+    .offset-2{
+      margin-left: 10%;
+    }
+  }
+  .faq{
+        .red-line {
+	display: none;
+}
+  }
+  .feedback {
+	    .red-line,.slider-item-img {
+	display: none;
+}
+}
+  .work{
+    &-info{
+      &-item{
+        p{
+          display: inline-block;
+          width: 85%;
+          padding: 0;
+        }
+        padding: 0;
+        .work-icon{
+          left:-3.4rem;
+        }
+      }
+    }
+    
+  }
+  .contact {
+	.red-line {
+	display: none;
+}
+}
+  .popup{
+    h2{
+      font-size: 1.8rem;
+    }
+    &-form{
+      padding: 1rem;
+      
+    }
+    &-content{
+      top:9%;
     }
   }
 }
